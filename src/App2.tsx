@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import './styles.css';
 
 const App2 = () => {
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = React.useState(0);
   const counterHandler = () => {
     setCounter(() => {
       return counter + 1;
@@ -9,8 +10,8 @@ const App2 = () => {
   };
   return (
     <div>
-      <p id="button"></p>
-      <button onClick={counterHandler}>press - {counter}</button>
+      <p id="button">{counter}</p>
+      <button onClick={counterHandler}>increment</button>
     </div>
   );
 };
