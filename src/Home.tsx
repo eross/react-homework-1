@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './styles.css';
 
 // don't change the Component name "App"
 export default function Home() {
