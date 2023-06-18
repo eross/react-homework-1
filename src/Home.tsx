@@ -5,12 +5,10 @@ import './styles.css';
 export default function Home() {
   const [deleteOn, setDeleteOn] = useState(false);
   const deleteHandler = () => {
-    console.log('delete ' + deleteOn);
     setDeleteOn(true);
   };
 
   const proceedHandler = () => {
-    console.log('proceed ' + deleteOn);
     setDeleteOn(false);
   };
 
